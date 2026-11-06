@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="description" content="フリー・ノベルゲーム『白夢フローライト』公式サイト。寒村・憶那村と不思議な石フローライトを巡る、静かで幻想的な物語。2027年1月 配信予定（制作中）。" />
+<link rel="icon" href="data:," />
+<title>『白夢フローライト』公式サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2340; --navy-deep:#141a30; --navy-soft:#2a3358;
+    --paper:#faf7ef; --paper-2:#f3eee0; --paper-3:#ece5d2;
+    --ink:#2e2a24; --ink-2:#4c463c; --muted:#7d7666;
+    --line:#c9bfa5; --line-dark:#8f8468;
+    --mint:#7fc8a9; --mint-deep:#3d7d63; --mint-pale:#dcefe4;
+    --red:#b8443c; --red-deep:#93332d; --gold:#a5854c;
+    --serif:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;color:var(--ink);font-family:var(--sans);line-height:1.8;letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;background-color:var(--navy);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.45'/%3E%3Cpath d='M104 92l4 7-4 7-4-7z' fill='%23faf7ef' fill-opacity='.22'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.5'/%3E%3Cpath d='M20 108l1.3 3.2 3.2 1.3-3.2 1.3L20 117l-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%237fc8a9' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='52' cy='122' r='1.1' fill='%23faf7ef' fill-opacity='.3'/%3E%3C/svg%3E"),
+      radial-gradient(circle, rgba(250,247,239,.30) 1px, transparent 1.4px),
+      radial-gradient(circle, rgba(127,200,169,.26) 1px, transparent 1.4px);
+    background-size:140px 140px, 90px 90px, 150px 150px;
+    background-position:0 0, 19px 27px, 44px 61px;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  ::selection{background:var(--mint);color:var(--navy-deep)}
+  .page{position:relative;max-width:1024px;margin:0 auto;background:var(--paper);border-left:3px double var(--line-dark);border-right:3px double var(--line-dark);box-shadow:0 0 0 1px rgba(0,0,0,.35), 0 0 60px rgba(0,0,0,.5)}
+  .page::before{content:"";position:absolute;inset:7px;border:1px solid var(--line);pointer-events:none;z-index:30}
+  .corner{position:absolute;z-index:31;color:var(--gold);font-size:15px;line-height:1;pointer-events:none;font-family:var(--serif)}
+  .corner.tl{top:11px;left:13px}.corner.tr{top:11px;right:13px}.corner.bl{bottom:11px;left:13px}.corner.br{bottom:11px;right:13px}
+  .wrap{max-width:944px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px double var(--mint)}
+  .nav-inner{max-width:1024px;margin:0 auto;display:flex;align-items:stretch;flex-wrap:wrap}
+  .nav-brand{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.06em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:9px;padding:10px 18px 10px 22px;white-space:nowrap}
+  .nav-brand .gem{color:var(--mint);font-size:13px}
+  .nav-links{display:flex;flex:1;flex-wrap:wrap}
+  .nav-links a{flex:1 1 auto;display:flex;align-items:center;justify-content:center;font-size:12.5px;letter-spacing:.1em;text-decoration:none;color:#e8eaf2;font-weight:700;padding:10px 6px;border-left:1px solid var(--navy-soft);white-space:nowrap;text-align:center}
+  .nav-links a:hover,.nav-links a:focus-visible{background:var(--paper-3);color:var(--navy-deep)}
+  .nav-links a.active{background:var(--mint);color:var(--navy-deep);box-shadow:inset 0 -3px 0 var(--red)}
+
+  /* page visual band (sub pages) */
+  .page-visual{position:relative;overflow:hidden;background:var(--navy);border-bottom:3px double var(--mint);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.5'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.5'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .page-visual-inner{max-width:944px;margin:0 auto;padding:30px 28px 26px;position:relative}
+  .page-visual h1{font-family:var(--serif);font-size:clamp(24px,4.4vw,34px);font-weight:800;letter-spacing:.06em;color:#fff;margin:0;line-height:1.45}
+  .page-visual h1 .dia{color:var(--mint);font-size:.62em;vertical-align:.28em;margin-right:10px}
+  .page-visual p{margin:6px 0 0;color:#c9cee2;font-size:13.5px;letter-spacing:.05em}
+  .page-visual .big-gem{position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:110px;line-height:1;color:rgba(127,200,169,.16);font-family:var(--serif);pointer-events:none}
+  .page-visual .moon{position:absolute;right:120px;top:8px;font-size:22px;color:var(--gold);opacity:.85;pointer-events:none}
+
+  /* sections */
+  section{padding:52px 0 4px}
+  section.first{padding-top:38px}
+  .sec-head{margin-bottom:28px}
+  .band{display:flex;align-items:center;gap:14px;border-bottom:3px double var(--line-dark);padding-bottom:8px}
+  .band::before{content:"";flex:none;width:10px;align-self:stretch;background:var(--mint);border:1px solid var(--mint-deep)}
+  .band h2{font-family:var(--serif);font-size:clamp(21px,3.4vw,27px);font-weight:800;letter-spacing:.05em;margin:0;line-height:1.4;color:var(--navy)}
+  .band .dia{margin-left:auto;color:var(--gold);font-size:13px;flex:none}
+  .lead{color:var(--ink-2);font-size:14.5px;margin:0 0 26px}
+
+  /* main visual (top) */
+  .hero{padding:30px 0 0}
+  .hero-art{position:relative;border:1px solid var(--line-dark);outline:3px double var(--line);outline-offset:4px;background:var(--navy-deep);aspect-ratio:16/10.4;overflow:hidden}
+  .hero-art .kv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}
+  .hero-art::after{content:"";position:absolute;inset:6px;border:1px solid rgba(250,247,239,.4);pointer-events:none;z-index:4}
+  .hero-sprite{position:absolute;bottom:52px;height:66%;width:auto;z-index:2;filter:drop-shadow(0 0 7px rgba(10,12,26,.5));pointer-events:none}
+  .hero-sprite.left{left:1%}
+  .hero-sprite.right{right:1%}
+  .mv-logo{position:absolute;top:4.5%;left:50%;transform:translateX(-50%);z-index:3;width:min(400px,58%);background:var(--paper);border:1px solid var(--line-dark);outline:3px double var(--line);outline-offset:3px;padding:7px 12px 5px}
+  .mv-logo img{width:100%;height:auto;aspect-ratio:2024/1170;object-fit:cover;object-position:center 47%}
+  .mv-ruby{margin:3px 0 1px;text-align:center;font-size:10.5px;letter-spacing:.42em;padding-left:.42em;color:var(--muted);font-weight:500}
+  .mv-deco{position:absolute;z-index:3;color:var(--gold);font-family:var(--serif);pointer-events:none;line-height:1}
+  .mv-deco.d1{top:12px;left:14px;font-size:17px}
+  .mv-deco.d2{top:44%;left:12px;font-size:13px;color:var(--mint)}
+  .mv-deco.d3{top:40%;right:12px;font-size:15px}
+  .mv-deco.moon{top:10px;left:52px;font-size:21px;color:#f3e2b8}
+  .mv-badge{position:absolute;top:14px;right:14px;z-index:5;width:110px;height:110px;border-radius:50%;background:var(--red);color:#fff;border:2px solid #fff;outline:2px solid var(--red-deep);transform:rotate(-8deg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 6px 18px rgba(20,16,10,.35);font-family:var(--serif)}
+  .mv-badge .b1{font-size:10px;letter-spacing:.24em;padding-left:.24em;font-family:var(--sans);font-weight:700}
+  .mv-badge .b2{font-size:17.5px;font-weight:800;letter-spacing:.04em;line-height:1.35}
+  .mv-badge .b3{font-size:11.5px;letter-spacing:.3em;padding-left:.3em;font-weight:700;border-top:1px solid rgba(255,255,255,.65);margin-top:3px;padding-top:3px}
+  .mv-catch{position:absolute;left:0;right:0;bottom:0;z-index:4;background:var(--navy);border-top:3px double var(--mint);color:#fff;text-align:center;padding:9px 14px 11px}
+  .mv-catch p{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(14.5px,2.6vw,20px);letter-spacing:.05em;line-height:1.6}
+  .mv-catch .accent-v{color:#f0928a}
+  .mv-catch .accent-t{color:var(--mint)}
+
+  /* countdown-like banner */
+  .count-banner{margin:22px 0 0;display:flex;align-items:stretch;border:1px solid var(--red-deep);background:var(--paper);text-decoration:none}
+  .count-banner .cb-date{flex:none;background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 20px;font-family:var(--serif)}
+  .count-banner .cb-date .y{font-size:11px;letter-spacing:.3em;padding-left:.3em;font-family:var(--sans);font-weight:700}
+  .count-banner .cb-date .d{font-size:24px;font-weight:800;line-height:1.3;letter-spacing:.05em}
+  .count-banner .cb-body{flex:1;padding:10px 18px;display:flex;flex-direction:column;justify-content:center}
+  .count-banner .cb-body .t{font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);letter-spacing:.05em;line-height:1.5}
+  .count-banner .cb-body .s{font-size:12.5px;color:var(--muted)}
+  .count-banner .cb-go{flex:none;display:flex;align-items:center;padding:0 18px;font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--red);border-left:1px dotted var(--line-dark)}
+  .count-banner:hover .cb-go{background:var(--red);color:#fff}
+  .hero-meta{display:flex;flex-wrap:wrap;justify-content:center;margin:16px 0 0;font-size:13px}
+  .hero-meta span{padding:2px 16px;font-weight:700;color:var(--ink-2)}
+  .hero-meta span + span{border-left:1px solid var(--line)}
+  .hero-meta b{color:var(--navy);font-family:var(--serif)}
+  .hero-intro{margin:14px auto 0;font-size:14px;color:var(--ink-2);max-width:620px;text-align:center}
+
+  /* news */
+  .news{margin:26px 0 0;border:1px solid var(--line-dark);outline:3px double var(--line);outline-offset:3px;background:var(--paper);position:relative}
+  .news::after{content:"✦";position:absolute;top:5px;right:10px;font-size:12px;color:var(--gold)}
+  .news-head{display:flex;align-items:center;gap:10px;background:var(--navy);color:#fff;font-family:var(--serif);font-weight:700;font-size:14.5px;letter-spacing:.16em;padding:6px 14px;margin:0}
+  .news-head .dia{color:var(--mint);font-size:11px}
+  .news-list{list-style:none;margin:0;padding:4px 16px 8px}
+  .news-list li{display:flex;gap:18px;padding:8px 2px;font-size:13.5px;align-items:baseline}
+  .news-list li + li{border-top:1px dotted var(--line-dark)}
+  .news-date{font-family:var(--serif);font-weight:700;color:var(--red);white-space:nowrap;font-size:13px;letter-spacing:.05em}
+  .news-list p{margin:0;color:var(--ink-2)}
+
+  /* page banners (image-button style) */
+  .banner-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .page-banner{position:relative;display:flex;align-items:center;gap:16px;border:1px solid var(--line-dark);background:var(--paper);padding:18px 20px;text-decoration:none;overflow:hidden;min-height:104px}
+  .page-banner::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--mint);border-right:1px solid var(--mint-deep)}
+  .page-banner.red::before{background:var(--red);border-right-color:var(--red-deep)}
+  .page-banner.gold::before{background:var(--gold);border-right-color:#7d6535}
+  .page-banner.navy::before{background:var(--navy);border-right-color:var(--navy-deep)}
+  .page-banner .pb-motif{flex:none;width:52px;height:52px;border:1px solid var(--line-dark);background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:23px;color:var(--mint-deep);font-family:var(--serif)}
+  .page-banner.red .pb-motif{color:var(--red)}
+  .page-banner.gold .pb-motif{color:var(--gold)}
+  .page-banner.navy .pb-motif{color:var(--navy)}
+  .page-banner .pb-text{flex:1;min-width:0}
+  .page-banner h3{font-family:var(--serif);font-size:19px;margin:0 0 2px;color:var(--navy);letter-spacing:.05em;line-height:1.45}
+  .page-banner p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.7}
+  .page-banner .pb-go{flex:none;font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--red);border:1px solid var(--red);padding:4px 11px;white-space:nowrap}
+  .page-banner:hover{background:var(--navy)}
+  .page-banner:hover h3{color:#fff}
+  .page-banner:hover p{color:#c9cee2}
+  .page-banner:hover .pb-motif{background:var(--navy-soft);border-color:var(--mint);color:var(--mint)}
+  .page-banner:hover .pb-go{background:var(--red);color:#fff}
+  .page-banner.wide{grid-column:span 2}
+  .page-banner .pb-art{flex:none;display:flex;align-items:flex-end;gap:2px;height:96px}
+  .page-banner .pb-art img{height:100%;width:auto;object-fit:contain}
+  .page-banner .pb-photo{flex:none;width:168px;height:96px;object-fit:cover;border:1px solid var(--line-dark)}
+  .sub-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:8px}
+  .sub-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;border:1px solid var(--line-dark);background:var(--paper);text-decoration:none;padding:11px 6px 9px;font-family:var(--serif);font-weight:700;font-size:13.5px;color:var(--navy);letter-spacing:.05em;text-align:center}
+  .sub-nav a .m{font-size:15px;color:var(--mint-deep)}
+  .sub-nav a:hover,.sub-nav a:focus-visible{background:var(--navy);color:#fff}
+  .sub-nav a:hover .m{color:var(--mint)}
+  .sub-nav a.cur{background:var(--mint-pale);pointer-events:none}
+</style>
+<style>
+  /* footer */
+  footer{margin-top:64px;background:var(--navy);color:#e9ebf5;padding:48px 20px 42px;text-align:center;border-top:3px double var(--mint);position:relative;z-index:1;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.4'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.4'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .footer-logo{width:min(360px,80vw);margin:0 auto;filter:brightness(0) invert(1);opacity:.97;aspect-ratio:1000/560;object-fit:cover;object-position:center 48%}
+  .footer-title{font-family:var(--serif);letter-spacing:.18em;font-size:12px;margin:22px 0 0;padding-left:.18em;color:#aeb6d4}
+  .footer-nav{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin:22px 0 0}
+  .footer-nav a{font-size:12px;letter-spacing:.12em;text-decoration:none;color:#c9cee2;padding:2px 14px}
+  .footer-nav a + a{border-left:1px solid var(--navy-soft)}
+  .footer-nav a:hover{color:var(--mint)}
+  .copyright{margin:28px 0 0;font-size:12.5px;color:#9aa0bd;letter-spacing:.05em}
+  .footer-note{margin:6px 0 0;font-size:11.5px;color:#767d99}
+
+  @media (max-width:860px){
+    section{padding:42px 0 4px}
+    .wrap{padding:0 18px}
+    .page-visual-inner{padding:24px 18px 20px}
+    .nav-brand{padding:8px 12px}
+    .nav-links a{font-size:11.5px;padding:9px 4px;flex:1 1 30%}
+    .hero-art{aspect-ratio:1/1.02}
+    .hero-sprite{height:56%;bottom:64px}
+    .mv-logo{width:62%}
+    .mv-badge{width:88px;height:88px;top:10px;right:10px}
+    .mv-badge .b2{font-size:14.5px}
+    .mv-badge .b3{font-size:10px}
+    .banner-grid{grid-template-columns:1fr}
+    .page-banner.wide{grid-column:span 1}
+    .page-banner .pb-photo{width:120px}
+    .sub-nav{grid-template-columns:repeat(2,1fr)}
+    .sub-nav a:last-child{grid-column:span 2}
+    .news-list li{flex-direction:column;gap:0}
+    .count-banner{flex-wrap:wrap}
+    .count-banner .cb-go{border-left:none;border-top:1px dotted var(--line-dark);flex:1;justify-content:center;padding:8px}
+  }
+  @media (max-width:520px){
+    .hero-sprite.left{left:-4%}
+    .hero-sprite.right{right:-4%}
+    .page-banner .pb-art{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <span class="corner tl" aria-hidden="true">✦</span>
+  <span class="corner tr" aria-hidden="true">✦</span>
+  <span class="corner bl" aria-hidden="true">✦</span>
+  <span class="corner br" aria-hidden="true">✦</span>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html"><span class="gem" aria-hidden="true">❖</span>白夢フローライト</a>
+    <nav class="nav-links" aria-label="サイトメニュー">
+      <a href="index.html" class="active" aria-current="page">トップ</a>
+      <a href="assets/story.html">物語</a>
+      <a href="assets/character.html">キャラクター</a>
+      <a href="assets/gallery.html">ギャラリー</a>
+      <a href="assets/music.html">音楽</a>
+      <a href="assets/product.html">製品情報</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ メインビジュアル ============ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-art">
+      <img class="kv" src="assets/keyvisual.png" alt="赤い月が昇る夜の屋上で佇むハクと恋夢のキービジュアル" />
+      <img class="hero-sprite left" src="assets/haku_normal.png" alt="" aria-hidden="true" />
+      <img class="hero-sprite right" src="assets/koyume_normal.png" alt="" aria-hidden="true" />
+      <span class="mv-deco moon" aria-hidden="true">☾</span>
+      <span class="mv-deco d1" aria-hidden="true">✦</span>
+      <span class="mv-deco d2" aria-hidden="true">❖</span>
+      <span class="mv-deco d3" aria-hidden="true">✦</span>
+      <div class="mv-logo">
+        <img src="assets/logo_a.png" alt="『白夢フローライト』タイトルロゴ" width="2024" height="1992" />
+        <p class="mv-ruby">しろゆめふろーらいと</p>
+      </div>
+      <div class="mv-badge" aria-label="2027年1月配信予定">
+        <span class="b1">BOOTHにて</span>
+        <span class="b2">2027年1月</span>
+        <span class="b3">配信予定</span>
+      </div>
+      <div class="mv-catch">
+        <p>小さな村と、<span class="accent-v">不思議な石</span>と、まだ名前のない<span class="accent-t">気持ち</span>の物語。</p>
+      </div>
+    </div>
+
+    <a class="count-banner" href="assets/product.html">
+      <span class="cb-date"><span class="y">配信予定</span><span class="d">2027年1月</span></span>
+      <span class="cb-body">
+        <span class="t">BOOTHにて無料配信予定 ― 制作中</span>
+        <span class="s">価格：無料 ／ 対応：Windows PC（Android版も予定）</span>
+      </span>
+      <span class="cb-go">製品情報へ ▸</span>
+    </a>
+
+    <p class="hero-meta">
+      <span>ジャンル：<b>ノベルゲーム</b></span>
+      <span>対応：<b>Windows PC</b>（Android版も予定）</span>
+      <span>制作：<b>白夢フローライト制作チーム</b></span>
+    </p>
+    <p class="hero-intro">都会から遠く離れた寒村・憶那村（おくなむら）。<br>そこで始まる新しい生活と、色を変えて瞬く石――フローライトを巡る、静かで幻想的なノベルゲーム。</p>
+
+    <!-- ============ お知らせ ============ -->
+    <div class="news">
+      <p class="news-head"><span class="dia" aria-hidden="true">◆</span>お知らせ・更新履歴</p>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2027.01</span>
+          <p>BOOTHにて無料配信予定です。続報をお待ちください。</p>
+        </li>
+        <li>
+          <span class="news-date">2026.11.06</span>
+          <p>キャラクター紹介（立ち絵・表情差分・サンプルボイス）とギャラリーを公開しました。</p>
+        </li>
+        <li>
+          <span class="news-date">2026.11.06</span>
+          <p>『白夢フローライト』公式サイトを公開しました。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 各ページへのご案内 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ご案内</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <div class="banner-grid">
+      <a class="page-banner" href="assets/story.html">
+        <span class="pb-motif" aria-hidden="true">❖</span>
+        <span class="pb-text">
+          <h3>物語</h3>
+          <p>憶那村とフローライトを巡る物語のあらすじと、タイトルに込めた由来をご紹介します。</p>
+        </span>
+        <span class="pb-go">物語へ ▸</span>
+      </a>
+      <a class="page-banner gold" href="assets/gallery.html">
+        <img class="pb-photo" src="assets/keyvisual.png" alt="" aria-hidden="true" />
+        <span class="pb-text">
+          <h3>ギャラリー</h3>
+          <p>キービジュアル、ハクの能力発動イラスト、村の背景画を拡大表示でご覧いただけます。</p>
+        </span>
+        <span class="pb-go">ギャラリーへ ▸</span>
+      </a>
+      <a class="page-banner red wide" href="assets/character.html">
+        <span class="pb-motif" aria-hidden="true">✦</span>
+        <span class="pb-text">
+          <h3>キャラクター</h3>
+          <p>ハク、友詩恋夢、十六原愛翔と村の人々。立ち絵の表情差分とサンプルボイスもこちらでお聞きいただけます。</p>
+        </span>
+        <span class="pb-art" aria-hidden="true">
+          <img src="assets/haku_normal.png" alt="" />
+          <img src="assets/koyume_normal.png" alt="" />
+        </span>
+        <span class="pb-go">キャラクターへ ▸</span>
+      </a>
+      <a class="page-banner navy" href="assets/music.html">
+        <span class="pb-motif" aria-hidden="true">♪</span>
+        <span class="pb-text">
+          <h3>音楽</h3>
+          <p>オープニング、エンディング、劇中音楽。物語を彩る楽曲たちについて。</p>
+        </span>
+        <span class="pb-go">音楽へ ▸</span>
+      </a>
+      <a class="page-banner" href="assets/product.html">
+        <span class="pb-motif" aria-hidden="true">◆</span>
+        <span class="pb-text">
+          <h3>製品情報</h3>
+          <p>価格・対応機種・配信時期などの仕様と、出演キャストなどのクレジット。</p>
+        </span>
+        <span class="pb-go">製品情報へ ▸</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img class="footer-logo" src="assets/logo_b.png" alt="『白夢フローライト』ロゴ" />
+  <p class="footer-title">白夢フローライト 公式サイト</p>
+  <nav class="footer-nav" aria-label="フッターメニュー">
+    <a href="index.html">トップ</a>
+    <a href="assets/story.html">物語</a>
+    <a href="assets/character.html">キャラクター</a>
+    <a href="assets/gallery.html">ギャラリー</a>
+    <a href="assets/music.html">音楽</a>
+    <a href="assets/product.html">製品情報</a>
+  </nav>
+  <p class="copyright">© 白夢フローライト制作チーム</p>
+  <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
+</footer>
+
+</div><!-- /.page -->
+</body>
+</html>
