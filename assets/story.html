@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="description" content="『白夢フローライト』の物語。寒村・憶那村と不思議な石フローライトを巡るあらすじと、タイトルに込めた由来をご紹介します。" />
+<link rel="icon" href="data:," />
+<title>物語 ― 『白夢フローライト』公式サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2340; --navy-deep:#141a30; --navy-soft:#2a3358;
+    --paper:#faf7ef; --paper-2:#f3eee0; --paper-3:#ece5d2;
+    --ink:#2e2a24; --ink-2:#4c463c; --muted:#7d7666;
+    --line:#c9bfa5; --line-dark:#8f8468;
+    --mint:#7fc8a9; --mint-deep:#3d7d63; --mint-pale:#dcefe4;
+    --red:#b8443c; --red-deep:#93332d; --gold:#a5854c;
+    --serif:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;color:var(--ink);font-family:var(--sans);line-height:1.8;letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;background-color:var(--navy);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.45'/%3E%3Cpath d='M104 92l4 7-4 7-4-7z' fill='%23faf7ef' fill-opacity='.22'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.5'/%3E%3Cpath d='M20 108l1.3 3.2 3.2 1.3-3.2 1.3L20 117l-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%237fc8a9' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='52' cy='122' r='1.1' fill='%23faf7ef' fill-opacity='.3'/%3E%3C/svg%3E"),
+      radial-gradient(circle, rgba(250,247,239,.30) 1px, transparent 1.4px),
+      radial-gradient(circle, rgba(127,200,169,.26) 1px, transparent 1.4px);
+    background-size:140px 140px, 90px 90px, 150px 150px;
+    background-position:0 0, 19px 27px, 44px 61px;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  ::selection{background:var(--mint);color:var(--navy-deep)}
+  .page{position:relative;max-width:1024px;margin:0 auto;background:var(--paper);border-left:3px double var(--line-dark);border-right:3px double var(--line-dark);box-shadow:0 0 0 1px rgba(0,0,0,.35), 0 0 60px rgba(0,0,0,.5)}
+  .page::before{content:"";position:absolute;inset:7px;border:1px solid var(--line);pointer-events:none;z-index:30}
+  .corner{position:absolute;z-index:31;color:var(--gold);font-size:15px;line-height:1;pointer-events:none;font-family:var(--serif)}
+  .corner.tl{top:11px;left:13px}.corner.tr{top:11px;right:13px}.corner.bl{bottom:11px;left:13px}.corner.br{bottom:11px;right:13px}
+  .wrap{max-width:944px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px double var(--mint)}
+  .nav-inner{max-width:1024px;margin:0 auto;display:flex;align-items:stretch;flex-wrap:wrap}
+  .nav-brand{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.06em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:9px;padding:10px 18px 10px 22px;white-space:nowrap}
+  .nav-brand .gem{color:var(--mint);font-size:13px}
+  .nav-links{display:flex;flex:1;flex-wrap:wrap}
+  .nav-links a{flex:1 1 auto;display:flex;align-items:center;justify-content:center;font-size:12.5px;letter-spacing:.1em;text-decoration:none;color:#e8eaf2;font-weight:700;padding:10px 6px;border-left:1px solid var(--navy-soft);white-space:nowrap;text-align:center}
+  .nav-links a:hover,.nav-links a:focus-visible{background:var(--paper-3);color:var(--navy-deep)}
+  .nav-links a.active{background:var(--mint);color:var(--navy-deep);box-shadow:inset 0 -3px 0 var(--red)}
+  .page-visual{position:relative;overflow:hidden;background:var(--navy);border-bottom:3px double var(--mint);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.5'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.5'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .page-visual-inner{max-width:944px;margin:0 auto;padding:30px 28px 26px;position:relative}
+  .page-visual h1{font-family:var(--serif);font-size:clamp(24px,4.4vw,34px);font-weight:800;letter-spacing:.06em;color:#fff;margin:0;line-height:1.45}
+  .page-visual h1 .dia{color:var(--mint);font-size:.62em;vertical-align:.28em;margin-right:10px}
+  .page-visual p{margin:6px 0 0;color:#c9cee2;font-size:13.5px;letter-spacing:.05em}
+  .page-visual .big-gem{position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:110px;line-height:1;color:rgba(127,200,169,.16);font-family:var(--serif);pointer-events:none}
+  .page-visual .moon{position:absolute;right:120px;top:8px;font-size:22px;color:var(--gold);opacity:.85;pointer-events:none}
+  section{padding:52px 0 4px}
+  section.first{padding-top:38px}
+  .sec-head{margin-bottom:28px}
+  .band{display:flex;align-items:center;gap:14px;border-bottom:3px double var(--line-dark);padding-bottom:8px}
+  .band::before{content:"";flex:none;width:10px;align-self:stretch;background:var(--mint);border:1px solid var(--mint-deep)}
+  .band h2{font-family:var(--serif);font-size:clamp(21px,3.4vw,27px);font-weight:800;letter-spacing:.05em;margin:0;line-height:1.4;color:var(--navy)}
+  .band .dia{margin-left:auto;color:var(--gold);font-size:13px;flex:none}
+  .lead{color:var(--ink-2);font-size:14.5px;margin:0 0 26px}
+  /* story */
+  .story-text{border:1px solid var(--line);background:var(--paper);padding:28px 30px 12px}
+  .story-text p{font-size:15px;color:var(--ink-2);margin:0 0 16px}
+  .story-text p strong{color:var(--navy);font-family:var(--serif)}
+  .quote{font-family:var(--serif);font-size:16.5px;line-height:2;color:var(--navy);border-left:4px solid var(--red);background:var(--paper-2);padding:8px 16px;margin:22px 0 18px}
+  .gem-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .gem-card{border:1px solid var(--line-dark);background:var(--paper);padding:20px 18px 18px;position:relative}
+  .gem-card::before{content:"❖";position:absolute;top:6px;right:10px;font-size:12px;color:var(--line-dark)}
+  .gem-card h3{font-family:var(--serif);font-size:17px;margin:0 0 8px;letter-spacing:.04em;color:var(--navy);border-bottom:1px solid var(--line);padding-bottom:7px}
+  .gem-card p{margin:0;font-size:13.5px;color:var(--ink-2)}
+  .gem-mark{display:inline-block;font-size:19px;line-height:1;margin-bottom:10px}
+  .gem-mark.v{color:#7a68b8}.gem-mark.t{color:var(--mint-deep)}.gem-mark.b{color:#4d7396}
+  .fluorite-note{margin:16px 0 0;border:1px dashed var(--line-dark);background:var(--paper-2);padding:16px 20px;font-size:13.5px;color:var(--ink-2)}
+  .fluorite-note strong{font-family:var(--serif);color:var(--navy)}
+  .bg-list{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .bg-item{border:1px solid var(--line-dark);background:var(--paper);padding:18px}
+  .bg-item h3{font-family:var(--serif);font-size:16px;margin:0 0 6px;color:var(--navy)}
+  .bg-item h3::before{content:"◆ ";color:var(--mint-deep);font-size:10px;vertical-align:2px}
+  .bg-item p{margin:0;font-size:13px;color:var(--ink-2)}
+  .to-banner{margin-top:22px;display:flex;align-items:center;gap:16px;border:1px solid var(--line-dark);background:var(--paper);padding:16px 20px;text-decoration:none}
+  .to-banner .m{flex:none;width:46px;height:46px;border:1px solid var(--line-dark);background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--red);font-family:var(--serif)}
+  .to-banner .t{flex:1}
+  .to-banner .t b{font-family:var(--serif);font-size:16.5px;color:var(--navy);display:block;letter-spacing:.04em}
+  .to-banner .t span{font-size:12.5px;color:var(--muted)}
+  .to-banner .go{flex:none;font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--red);border:1px solid var(--red);padding:4px 11px;white-space:nowrap}
+  .to-banner:hover{background:var(--navy)}
+  .to-banner:hover .t b{color:#fff}
+  .to-banner:hover .t span{color:#c9cee2}
+  .to-banner:hover .go{background:var(--red);color:#fff}
+  .sub-nav{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:8px}
+  .sub-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;border:1px solid var(--line-dark);background:var(--paper);text-decoration:none;padding:11px 6px 9px;font-family:var(--serif);font-weight:700;font-size:13.5px;color:var(--navy);letter-spacing:.05em;text-align:center}
+  .sub-nav a .m{font-size:15px;color:var(--mint-deep)}
+  .sub-nav a:hover,.sub-nav a:focus-visible{background:var(--navy);color:#fff}
+  .sub-nav a:hover .m{color:var(--mint)}
+  .sub-nav a.cur{background:var(--mint-pale);pointer-events:none}
+  footer{margin-top:64px;background:var(--navy);color:#e9ebf5;padding:48px 20px 42px;text-align:center;border-top:3px double var(--mint);position:relative;z-index:1;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.4'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.4'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .footer-logo{width:min(360px,80vw);margin:0 auto;filter:brightness(0) invert(1);opacity:.97;aspect-ratio:1000/560;object-fit:cover;object-position:center 48%}
+  .footer-title{font-family:var(--serif);letter-spacing:.18em;font-size:12px;margin:22px 0 0;padding-left:.18em;color:#aeb6d4}
+  .footer-nav{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin:22px 0 0}
+  .footer-nav a{font-size:12px;letter-spacing:.12em;text-decoration:none;color:#c9cee2;padding:2px 14px}
+  .footer-nav a + a{border-left:1px solid var(--navy-soft)}
+  .footer-nav a:hover{color:var(--mint)}
+  .copyright{margin:28px 0 0;font-size:12.5px;color:#9aa0bd;letter-spacing:.05em}
+  .footer-note{margin:6px 0 0;font-size:11.5px;color:#767d99}
+  @media (max-width:860px){
+    section{padding:42px 0 4px}
+    .wrap{padding:0 18px}
+    .page-visual-inner{padding:24px 18px 20px}
+    .nav-brand{padding:8px 12px}
+    .nav-links a{font-size:11.5px;padding:9px 4px;flex:1 1 30%}
+    .gem-row,.bg-list{grid-template-columns:1fr}
+    .story-text{padding:22px 18px 8px}
+    .sub-nav{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <span class="corner tl" aria-hidden="true">✦</span>
+  <span class="corner tr" aria-hidden="true">✦</span>
+  <span class="corner bl" aria-hidden="true">✦</span>
+  <span class="corner br" aria-hidden="true">✦</span>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html"><span class="gem" aria-hidden="true">❖</span>白夢フローライト</a>
+    <nav class="nav-links" aria-label="サイトメニュー">
+      <a href="../index.html">トップ</a>
+      <a href="story.html" class="active" aria-current="page">物語</a>
+      <a href="character.html">キャラクター</a>
+      <a href="gallery.html">ギャラリー</a>
+      <a href="music.html">音楽</a>
+      <a href="product.html">製品情報</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-visual">
+  <div class="page-visual-inner">
+    <span class="big-gem" aria-hidden="true">❖</span>
+    <span class="moon" aria-hidden="true">☾</span>
+    <h1><span class="dia" aria-hidden="true">◆</span>物語</h1>
+    <p>憶那村とフローライトを巡る、小さくて確かな変化の物語</p>
+  </div>
+</div>
+
+<section class="first">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ストーリー</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <div class="story-text">
+      <p>主人公・<strong>十六原愛翔（マナト）</strong>は、都会から遠く離れた寒村<strong>「憶那村（おくなむら）」</strong>へ移り住み、新しい生活を始めることになった。</p>
+      <p>山に囲まれ、田畑が広がる小さな村。時間の流れまでゆっくりと感じられるその場所で、愛翔は二人の少女と出会う。</p>
+      <p>謎の石を持つ少女・<strong>ハク</strong>。ギターを抱えた少女・<strong>友詩恋夢</strong>。</p>
+      <p>出会いとともに動き出すのは、村に眠る不思議な石――フローライトを巡る、小さくて、けれど確かな変化の物語。</p>
+      <p class="quote">「ねえ、その石……どうして色が変わるか、知ってる？」</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>タイトルに込めたもの</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <p class="lead">『白夢フローライト』という名前には、二人の少女と、ひとつの石の物語がそのまま刻まれています。</p>
+    <div class="gem-row">
+      <article class="gem-card">
+        <span class="gem-mark v" aria-hidden="true">❖</span>
+        <h3>「白」 ― ハク</h3>
+        <p>謎の石を持つ少女、ハク。その名の一文字が、タイトルの「白」になりました。額に瞬く宝石のように、村の静けさの中でひときわ異質で、ひときわまっすぐな存在です。</p>
+      </article>
+      <article class="gem-card">
+        <span class="gem-mark t" aria-hidden="true">❖</span>
+        <h3>「夢」 ― 恋夢</h3>
+        <p>ギターを抱えた少女、友詩恋夢（ゆめし こゆめ）。その名の一文字が、タイトルの「夢」になりました。彼女の弾く音色が、物語にもうひとつの色を与えます。</p>
+      </article>
+      <article class="gem-card">
+        <span class="gem-mark b" aria-hidden="true">❖</span>
+        <h3>「フローライト」 ― 蛍石</h3>
+        <p>作中に登場するキーアイテムの石、フローライト（蛍石）。光によって紫、青、緑へと色を変えるその石の石言葉が、作品のテーマに静かに重なります。</p>
+      </article>
+    </div>
+    <p class="fluorite-note"><strong>フローライト</strong> ― 当てる光によって表情を変える石。人もまた、出会う相手によって違う色を見せるのかもしれません。本作は、そんな「色の変化」を描く物語です。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>舞台 ― 憶那村</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <p class="lead">物語の舞台は、山々に囲まれた寒村・憶那村。愛翔の新しい日常を形づくる場所たちをご紹介します。背景画そのものは、ギャラリーのページでご覧いただけます。</p>
+    <div class="bg-list">
+      <article class="bg-item">
+        <h3>神社</h3>
+        <p>木々に守られるように佇む、村の神社。朝の光が参道と石灯籠を静かに照らします。</p>
+      </article>
+      <article class="bg-item">
+        <h3>村の道</h3>
+        <p>黄金色の田畑と集落を見渡す一本道。愛翔の新しい日常は、ここから始まります。</p>
+      </article>
+      <article class="bg-item">
+        <h3>村の建物</h3>
+        <p>瓦屋根と木の温もりが残る、村の暮らしの風景。懐かしさの漂う日常の舞台です。</p>
+      </article>
+    </div>
+    <a class="to-banner" href="gallery.html">
+      <span class="m" aria-hidden="true">✦</span>
+      <span class="t"><b>背景画はギャラリーへ</b><span>キービジュアルと背景画を、拡大表示でご覧いただけます。</span></span>
+      <span class="go">ギャラリーへ ▸</span>
+    </a>
+    <a class="to-banner" href="character.html">
+      <span class="m" aria-hidden="true">❖</span>
+      <span class="t"><b>登場人物を知る</b><span>ハク、友詩恋夢、十六原愛翔の紹介とサンプルボイスはこちら。</span></span>
+      <span class="go">キャラクターへ ▸</span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ほかのページ</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <nav class="sub-nav" aria-label="ほかのページへの案内">
+      <a href="../index.html"><span class="m" aria-hidden="true">⌂</span>トップ</a>
+      <a href="story.html" class="cur" aria-current="page"><span class="m" aria-hidden="true">❖</span>物語</a>
+      <a href="character.html"><span class="m" aria-hidden="true">✦</span>キャラクター</a>
+      <a href="gallery.html"><span class="m" aria-hidden="true">◆</span>ギャラリー</a>
+      <a href="music.html"><span class="m" aria-hidden="true">♪</span>音楽</a>
+      <a href="product.html"><span class="m" aria-hidden="true">❖</span>製品情報</a>
+    </nav>
+  </div>
+</section>
+
+<footer>
+  <img class="footer-logo" src="logo_b.png" alt="『白夢フローライト』ロゴ" />
+  <p class="footer-title">白夢フローライト 公式サイト</p>
+  <nav class="footer-nav" aria-label="フッターメニュー">
+    <a href="../index.html">トップ</a>
+    <a href="story.html">物語</a>
+    <a href="character.html">キャラクター</a>
+    <a href="gallery.html">ギャラリー</a>
+    <a href="music.html">音楽</a>
+    <a href="product.html">製品情報</a>
+  </nav>
+  <p class="copyright">© 白夢フローライト制作チーム</p>
+  <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
+</footer>
+
+</div><!-- /.page -->
+</body>
+</html>

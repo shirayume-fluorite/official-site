@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="description" content="『白夢フローライト』の登場人物。ハク、友詩恋夢、十六原愛翔の紹介、立ち絵の表情差分とサンプルボイスを掲載しています。" />
+<link rel="icon" href="data:," />
+<title>キャラクター ― 『白夢フローライト』公式サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2340; --navy-deep:#141a30; --navy-soft:#2a3358;
+    --paper:#faf7ef; --paper-2:#f3eee0; --paper-3:#ece5d2;
+    --ink:#2e2a24; --ink-2:#4c463c; --muted:#7d7666;
+    --line:#c9bfa5; --line-dark:#8f8468;
+    --mint:#7fc8a9; --mint-deep:#3d7d63; --mint-pale:#dcefe4;
+    --red:#b8443c; --red-deep:#93332d; --gold:#a5854c;
+    --serif:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;color:var(--ink);font-family:var(--sans);line-height:1.8;letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;background-color:var(--navy);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.45'/%3E%3Cpath d='M104 92l4 7-4 7-4-7z' fill='%23faf7ef' fill-opacity='.22'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.5'/%3E%3Cpath d='M20 108l1.3 3.2 3.2 1.3-3.2 1.3L20 117l-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%237fc8a9' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='52' cy='122' r='1.1' fill='%23faf7ef' fill-opacity='.3'/%3E%3C/svg%3E"),
+      radial-gradient(circle, rgba(250,247,239,.30) 1px, transparent 1.4px),
+      radial-gradient(circle, rgba(127,200,169,.26) 1px, transparent 1.4px);
+    background-size:140px 140px, 90px 90px, 150px 150px;
+    background-position:0 0, 19px 27px, 44px 61px;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  ::selection{background:var(--mint);color:var(--navy-deep)}
+  .page{position:relative;max-width:1024px;margin:0 auto;background:var(--paper);border-left:3px double var(--line-dark);border-right:3px double var(--line-dark);box-shadow:0 0 0 1px rgba(0,0,0,.35), 0 0 60px rgba(0,0,0,.5)}
+  .page::before{content:"";position:absolute;inset:7px;border:1px solid var(--line);pointer-events:none;z-index:30}
+  .corner{position:absolute;z-index:31;color:var(--gold);font-size:15px;line-height:1;pointer-events:none;font-family:var(--serif)}
+  .corner.tl{top:11px;left:13px}.corner.tr{top:11px;right:13px}.corner.bl{bottom:11px;left:13px}.corner.br{bottom:11px;right:13px}
+  .wrap{max-width:944px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px double var(--mint)}
+  .nav-inner{max-width:1024px;margin:0 auto;display:flex;align-items:stretch;flex-wrap:wrap}
+  .nav-brand{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.06em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:9px;padding:10px 18px 10px 22px;white-space:nowrap}
+  .nav-brand .gem{color:var(--mint);font-size:13px}
+  .nav-links{display:flex;flex:1;flex-wrap:wrap}
+  .nav-links a{flex:1 1 auto;display:flex;align-items:center;justify-content:center;font-size:12.5px;letter-spacing:.1em;text-decoration:none;color:#e8eaf2;font-weight:700;padding:10px 6px;border-left:1px solid var(--navy-soft);white-space:nowrap;text-align:center}
+  .nav-links a:hover,.nav-links a:focus-visible{background:var(--paper-3);color:var(--navy-deep)}
+  .nav-links a.active{background:var(--mint);color:var(--navy-deep);box-shadow:inset 0 -3px 0 var(--red)}
+  .page-visual{position:relative;overflow:hidden;background:var(--navy);border-bottom:3px double var(--mint);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.5'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.5'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .page-visual-inner{max-width:944px;margin:0 auto;padding:30px 28px 26px;position:relative}
+  .page-visual h1{font-family:var(--serif);font-size:clamp(24px,4.4vw,34px);font-weight:800;letter-spacing:.06em;color:#fff;margin:0;line-height:1.45}
+  .page-visual h1 .dia{color:var(--mint);font-size:.62em;vertical-align:.28em;margin-right:10px}
+  .page-visual p{margin:6px 0 0;color:#c9cee2;font-size:13.5px;letter-spacing:.05em}
+  .page-visual .big-gem{position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:110px;line-height:1;color:rgba(127,200,169,.16);font-family:var(--serif);pointer-events:none}
+  .page-visual .moon{position:absolute;right:120px;top:8px;font-size:22px;color:var(--gold);opacity:.85;pointer-events:none}
+  section{padding:52px 0 4px}
+  section.first{padding-top:38px}
+  .sec-head{margin-bottom:28px}
+  .band{display:flex;align-items:center;gap:14px;border-bottom:3px double var(--line-dark);padding-bottom:8px}
+  .band::before{content:"";flex:none;width:10px;align-self:stretch;background:var(--mint);border:1px solid var(--mint-deep)}
+  .band h2{font-family:var(--serif);font-size:clamp(21px,3.4vw,27px);font-weight:800;letter-spacing:.05em;margin:0;line-height:1.4;color:var(--navy)}
+  .band .dia{margin-left:auto;color:var(--gold);font-size:13px;flex:none}
+  .lead{color:var(--ink-2);font-size:14.5px;margin:0 0 26px}
+  /* heroines: left portrait / right profile */
+  .heroine{border:1px solid var(--line-dark);background:var(--paper);position:relative;display:grid;grid-template-columns:372px 1fr;margin-bottom:20px}
+  .heroine::before{content:"✦";position:absolute;top:5px;right:9px;font-size:11px;color:var(--gold);z-index:3}
+  .heroine-left{border-right:1px solid var(--line-dark);display:flex;flex-direction:column}
+  .portrait-stage{position:relative;display:flex;align-items:flex-end;justify-content:center;height:520px;overflow:hidden}
+  .portrait-stage::after{content:"";position:absolute;left:50%;bottom:14px;transform:translateX(-50%);width:62%;height:22px;border-radius:50%;background:rgba(28,35,64,.14);filter:blur(9px)}
+  .stage-haku{background:var(--mint-pale)}
+  .stage-koyume{background:#e9e2cd}
+  .portrait-stage img{position:relative;z-index:1;height:100%;width:auto;max-width:94%;object-fit:contain;object-position:bottom center;padding-top:12px;transition:opacity .18s ease}
+  .portrait-stage img.fading{opacity:0}
+  @media (prefers-reduced-motion: reduce){ .portrait-stage img{transition:none} }
+  .portrait-note{position:absolute;top:0;left:0;z-index:2;background:var(--navy);color:#fff;font-size:11px;letter-spacing:.1em;font-weight:700;padding:4px 12px}
+  .expr-bar{padding:13px 16px 4px;border-top:1px dotted var(--line-dark);background:var(--paper);margin-top:auto}
+  .expr-label{font-size:11px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:0 0 9px}
+  .expr-label::before{content:"◆ ";color:var(--mint-deep);font-size:9px}
+  .expr-chips{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:12px}
+  .expr-chip{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink-2);background:var(--paper);border:1px solid var(--line-dark);padding:5px 13px;cursor:pointer}
+  .expr-chip:hover{border-color:var(--navy);color:var(--navy)}
+  .expr-chip:focus-visible{outline:3px solid var(--mint-deep);outline-offset:2px}
+  .expr-chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+  .heroine-right{padding:20px 22px 22px;display:flex;flex-direction:column;gap:9px;min-width:0}
+  .chara-role{font-size:11px;letter-spacing:.18em;color:var(--red);font-weight:700;margin:0}
+  .chara-name{font-family:var(--serif);font-size:26px;font-weight:700;margin:0;letter-spacing:.03em;line-height:1.4;color:var(--navy)}
+  .chara-name ruby rt{font-size:10.5px;letter-spacing:.14em;color:var(--muted);font-family:var(--sans);font-weight:500}
+  .profile-table{border:1px solid var(--line-dark);margin:4px 0 2px}
+  .profile-table dl{margin:0}
+  .profile-table .row{display:grid;grid-template-columns:92px 1fr;border-top:1px dotted var(--line-dark)}
+  .profile-table .row:first-child{border-top:none}
+  .profile-table dt{background:var(--navy);color:#fff;padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.1em;font-family:var(--serif);display:flex;align-items:center}
+  .profile-table dd{margin:0;padding:7px 14px;font-size:13.5px;color:var(--ink-2)}
+  .profile-table dd b{color:var(--red);font-size:11px;letter-spacing:.1em;margin-right:7px}
+  .chara-desc{margin:2px 0 0;font-size:13.5px;color:var(--ink-2)}
+  .chara-keywords{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
+  .chara-keywords li{font-size:11.5px;border:1px solid var(--line-dark);padding:2px 9px;color:var(--ink-2);background:var(--paper)}
+  .chara-keywords li::before{content:"◆ ";color:var(--mint-deep);font-size:8px;vertical-align:2px}
+  .voice-block{margin-top:10px;border-top:3px double var(--line-dark);padding-top:14px}
+  .voice-title{font-family:var(--serif);font-size:15px;font-weight:700;margin:0 0 4px;letter-spacing:.03em;color:var(--navy)}
+  .voice-title::before{content:"❖ ";color:var(--gold);font-size:12px}
+  .voice-title small{display:block;font-family:var(--sans);font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.04em;margin-top:2px}
+  .voice-list{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .voice-item{display:flex;gap:11px;align-items:flex-start;background:var(--paper-2);border:1px solid var(--line);padding:10px 12px}
+  .voice-btn{flex:none;width:36px;height:36px;border:1px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .voice-btn:hover{background:var(--mint-deep);border-color:var(--mint-deep)}
+  .voice-btn:focus-visible{outline:3px solid var(--mint-deep);outline-offset:2px}
+  .voice-btn svg{width:14px;height:14px;fill:currentColor}
+  .voice-btn .icon-pause{display:none}
+  .voice-btn.playing .icon-play{display:none}
+  .voice-btn.playing .icon-pause{display:block}
+  .voice-line{margin:0;font-size:13px;line-height:1.75;color:var(--ink-2);font-family:var(--serif)}
+  /* manato / subcast */
+  .chara{border:1px solid var(--line-dark);background:var(--paper);display:flex;flex-direction:column}
+  .chara-visual{height:118px;position:relative;display:flex;align-items:flex-end;padding:14px 20px;overflow:hidden;background:var(--navy)}
+  .chara-visual .big{font-family:var(--serif);font-size:52px;font-weight:800;line-height:1;color:rgba(250,247,239,.94)}
+  .chara-visual .stone{position:absolute;right:18px;top:16px;color:var(--mint);font-size:20px}
+  .chara-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .chara-body .chara-name{font-size:22px}
+  .chara-cv{display:inline-flex;align-self:flex-start;gap:8px;align-items:center;border:1px solid var(--line-dark);background:var(--paper-2);padding:3px 12px;font-size:12.5px;font-weight:700}
+  .chara-cv span{color:var(--red);font-weight:700;font-size:11px;letter-spacing:.12em}
+  .chara-cv.none{color:var(--muted);font-weight:500}
+  .subcast{margin-top:18px;border:1px solid var(--line-dark);background:var(--paper);padding:20px 22px 8px}
+  .subcast h3{font-family:var(--serif);font-size:18px;margin:0 0 4px;color:var(--navy)}
+  .subcast h3::before{content:"❖ ";color:var(--gold);font-size:13px}
+  .subcast .sub-lead{font-size:13px;color:var(--muted);margin:0 0 10px}
+  .sub-list{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+  .sub-item{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px dotted var(--line-dark);align-items:baseline}
+  .sub-names{font-family:var(--serif);font-size:15px;font-weight:600;line-height:1.6}
+  .sub-cv{font-size:13px;color:var(--ink-2);white-space:nowrap}
+  .sub-cv b{color:var(--red);font-size:11px;letter-spacing:.1em;margin-right:6px;font-weight:700}
+  .sub-nav{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:8px}
+  .sub-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;border:1px solid var(--line-dark);background:var(--paper);text-decoration:none;padding:11px 6px 9px;font-family:var(--serif);font-weight:700;font-size:13.5px;color:var(--navy);letter-spacing:.05em;text-align:center}
+  .sub-nav a .m{font-size:15px;color:var(--mint-deep)}
+  .sub-nav a:hover,.sub-nav a:focus-visible{background:var(--navy);color:#fff}
+  .sub-nav a:hover .m{color:var(--mint)}
+  .sub-nav a.cur{background:var(--mint-pale);pointer-events:none}
+  footer{margin-top:64px;background:var(--navy);color:#e9ebf5;padding:48px 20px 42px;text-align:center;border-top:3px double var(--mint);position:relative;z-index:1;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.4'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.4'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .footer-logo{width:min(360px,80vw);margin:0 auto;filter:brightness(0) invert(1);opacity:.97;aspect-ratio:1000/560;object-fit:cover;object-position:center 48%}
+  .footer-title{font-family:var(--serif);letter-spacing:.18em;font-size:12px;margin:22px 0 0;padding-left:.18em;color:#aeb6d4}
+  .footer-nav{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin:22px 0 0}
+  .footer-nav a{font-size:12px;letter-spacing:.12em;text-decoration:none;color:#c9cee2;padding:2px 14px}
+  .footer-nav a + a{border-left:1px solid var(--navy-soft)}
+  .footer-nav a:hover{color:var(--mint)}
+  .copyright{margin:28px 0 0;font-size:12.5px;color:#9aa0bd;letter-spacing:.05em}
+  .footer-note{margin:6px 0 0;font-size:11.5px;color:#767d99}
+  @media (max-width:860px){
+    section{padding:42px 0 4px}
+    .wrap{padding:0 18px}
+    .page-visual-inner{padding:24px 18px 20px}
+    .nav-brand{padding:8px 12px}
+    .nav-links a{font-size:11.5px;padding:9px 4px;flex:1 1 30%}
+    .heroine{grid-template-columns:1fr}
+    .heroine-left{border-right:none;border-bottom:1px solid var(--line-dark)}
+    .portrait-stage{height:420px}
+    .sub-list{grid-template-columns:1fr}
+    .sub-nav{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (max-width:520px){
+    .portrait-stage{height:360px}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <span class="corner tl" aria-hidden="true">✦</span>
+  <span class="corner tr" aria-hidden="true">✦</span>
+  <span class="corner bl" aria-hidden="true">✦</span>
+  <span class="corner br" aria-hidden="true">✦</span>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html"><span class="gem" aria-hidden="true">❖</span>白夢フローライト</a>
+    <nav class="nav-links" aria-label="サイトメニュー">
+      <a href="../index.html">トップ</a>
+      <a href="story.html">物語</a>
+      <a href="character.html" class="active" aria-current="page">キャラクター</a>
+      <a href="gallery.html">ギャラリー</a>
+      <a href="music.html">音楽</a>
+      <a href="product.html">製品情報</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-visual">
+  <div class="page-visual-inner">
+    <span class="big-gem" aria-hidden="true">✦</span>
+    <span class="moon" aria-hidden="true">☾</span>
+    <h1><span class="dia" aria-hidden="true">◆</span>キャラクター</h1>
+    <p>立ち絵の表情差分とサンプルボイスで、二人の少女をご紹介します</p>
+  </div>
+</div>
+
+<section class="first">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ヒロイン</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+
+    <article class="heroine" data-chara="haku">
+      <div class="heroine-left">
+        <div class="portrait-stage stage-haku">
+          <span class="portrait-note">立ち絵 ― 表情差分つき</span>
+          <img id="sprite-haku" src="haku_normal.png" alt="ハクの立ち絵（通常）" width="640" height="1024" />
+        </div>
+        <div class="expr-bar">
+          <p class="expr-label">表情</p>
+          <div class="expr-chips" role="group" aria-label="ハクの表情切り替え">
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_normal.png" data-label="通常" aria-pressed="true">通常</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_smile.png" data-label="笑顔" aria-pressed="false">笑顔</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_shy.png" data-label="照れ" aria-pressed="false">照れ</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_surprised.png" data-label="驚き" aria-pressed="false">驚き</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_sorrowful.png" data-label="悲しみ" aria-pressed="false">悲しみ</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_angry.png" data-label="怒り" aria-pressed="false">怒り</button>
+            <button type="button" class="expr-chip" data-target="sprite-haku" data-src="haku_jito.png" data-label="ジト目" aria-pressed="false">ジト目</button>
+          </div>
+        </div>
+      </div>
+      <div class="heroine-right">
+        <p class="chara-role">ヒロイン</p>
+        <h3 class="chara-name">ハク</h3>
+        <div class="profile-table">
+          <dl>
+            <div class="row"><dt>名前</dt><dd>ハク</dd></div>
+            <div class="row"><dt>声</dt><dd><b>CV</b>鎌塚ちなみ</dd></div>
+            <div class="row"><dt>特徴</dt><dd>額の宝石とフローライト／念力のような力</dd></div>
+          </dl>
+        </div>
+        <p class="chara-desc">謎の石を持つ少女。額の宝石が特徴で、その石こそが物語の鍵を握るフローライト。村の誰も知らないはずのことを知っているような、不思議な佇まいを見せます。本人いわく、念力のような不思議な力も使えるのだとか。タイトルの「白夢」の「白」は、彼女の名から。</p>
+        <ul class="chara-keywords">
+          <li>謎の石</li><li>額の宝石</li><li>フローライト</li><li>念力のような力</li>
+        </ul>
+        <div class="voice-block">
+          <h4 class="voice-title">サンプルボイス<small>宣伝用掛け合いより ― CV：鎌塚ちなみ</small></h4>
+          <ul class="voice-list">
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-haku-1" aria-label="ハクのボイス1を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「初めまして、私の名前はハクです。……一応、念力みたいなものが使えます」</p>
+              <audio id="voice-haku-1" src="Haku_senden_004.wav" preload="none"></audio>
+            </li>
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-haku-2" aria-label="ハクのボイス2を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「こ……こんにちは」</p>
+              <audio id="voice-haku-2" src="Haku_senden_001.wav" preload="none"></audio>
+            </li>
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-haku-3" aria-label="ハクのボイス3を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「ともかく！ 『白夢フローライト』はそんな作品じゃないよ！」</p>
+              <audio id="voice-haku-3" src="Haku_senden_016.wav" preload="none"></audio>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="heroine" data-chara="koyume">
+      <div class="heroine-left">
+        <div class="portrait-stage stage-koyume">
+          <span class="portrait-note">立ち絵 ― 白衣ver.／表情差分つき</span>
+          <img id="sprite-koyume" src="koyume_normal.png" alt="友詩恋夢の立ち絵（通常・白衣姿）" width="640" height="1137" />
+        </div>
+        <div class="expr-bar">
+          <p class="expr-label">表情</p>
+          <div class="expr-chips" role="group" aria-label="友詩恋夢の表情切り替え">
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_normal.png" data-label="通常" aria-pressed="true">通常</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_smile.png" data-label="笑顔" aria-pressed="false">笑顔</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_shy.png" data-label="照れ" aria-pressed="false">照れ</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_surprised.png" data-label="驚き" aria-pressed="false">驚き</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_sorrowful.png" data-label="悲しみ" aria-pressed="false">悲しみ</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_angry.png" data-label="怒り" aria-pressed="false">怒り</button>
+            <button type="button" class="expr-chip" data-target="sprite-koyume" data-src="koyume_jito.png" data-label="ジト目" aria-pressed="false">ジト目</button>
+          </div>
+        </div>
+      </div>
+      <div class="heroine-right">
+        <p class="chara-role">ヒロイン</p>
+        <h3 class="chara-name"><ruby>友詩<rt>ゆめし</rt></ruby> <ruby>恋夢<rt>こゆめ</rt></ruby></h3>
+        <div class="profile-table">
+          <dl>
+            <div class="row"><dt>名前</dt><dd>友詩 恋夢（ゆめし こゆめ）</dd></div>
+            <div class="row"><dt>声</dt><dd><b>CV</b>mochimiyu</dd></div>
+            <div class="row"><dt>所属</dt><dd>観測情報課</dd></div>
+            <div class="row"><dt>特徴</dt><dd>ギターと音楽</dd></div>
+          </dl>
+        </div>
+        <p class="chara-desc">ギターを抱えた少女で、観測情報課に所属しています。音楽が、彼女と村と愛翔をつなぐ大切な架け橋になります。タイトルの「白夢」の「夢」は、彼女の名から。本作のもうひとつの柱である「音楽」を体現する存在です。</p>
+        <ul class="chara-keywords">
+          <li>ギター</li><li>音楽</li><li>歌声</li><li>観測情報課</li>
+        </ul>
+        <div class="voice-block">
+          <h4 class="voice-title">サンプルボイス<small>宣伝用掛け合いより ― CV：mochimiyu</small></h4>
+          <ul class="voice-list">
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-koyume-1" aria-label="恋夢のボイス1を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「私の名前は友詩恋夢。観測情報課所属よ。ハクちゃん、あらすじをお願いできる？」</p>
+              <audio id="voice-koyume-1" src="Koyume_senden_005.wav" preload="none"></audio>
+            </li>
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-koyume-2" aria-label="恋夢のボイス2を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「愛翔の無茶ぶりはいつものことだけど、今回は輪をかけてひどいわね」</p>
+              <audio id="voice-koyume-2" src="Koyume_senden_001.wav" preload="none"></audio>
+            </li>
+            <li class="voice-item">
+              <button type="button" class="voice-btn" data-audio="voice-koyume-3" aria-label="恋夢のボイス3を再生">
+                <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+              </button>
+              <p class="voice-line">「私たちがイチャイチャしながらなんやかんや化け物と戦うお話だから、楽しみにしていてね」</p>
+              <audio id="voice-koyume-3" src="Koyume_senden_018.wav" preload="none"></audio>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>主人公と村の人々</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+
+    <article class="chara">
+      <div class="chara-visual">
+        <span class="stone" aria-hidden="true">❖</span>
+        <span class="big" aria-hidden="true">愛翔</span>
+      </div>
+      <div class="chara-body">
+        <p class="chara-role">主人公</p>
+        <h3 class="chara-name"><ruby>十六原<rt>じゅうろくはら</rt></ruby> <ruby>愛翔<rt>まなと</rt></ruby></h3>
+        <p class="chara-cv none">主人公</p>
+        <p class="chara-desc">本作の主人公。都会から遠く離れた寒村・憶那村へ移り住み、新しい生活を始める少年。ハクと恋夢、二人の少女との出会いを通して、村と石に隠された物語へと足を踏み入れていきます。</p>
+        <ul class="chara-keywords">
+          <li>移住</li><li>新しい生活</li><li>憶那村</li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="subcast">
+      <h3>サブキャスト</h3>
+      <p class="sub-lead">憶那村の物語を彩る人々と、その声を演じるキャストの皆さまです。</p>
+      <div class="sub-list">
+        <div class="sub-item">
+          <span class="sub-names">十六原 弦 ／ 財前 柾匡 ／ 御子柴 権蔵</span>
+          <span class="sub-cv"><b>CV</b>杉野大雅</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-names">十六原 太久郎 ／ メナシ</span>
+          <span class="sub-cv"><b>CV</b>佐倉亮</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-names">皇 桜佳 ／ 小吉 ／ ヘサミス</span>
+          <span class="sub-cv"><b>CV</b>紅原ユウ子</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-names">十六原 里子 ／ 桔梗 梢恵</span>
+          <span class="sub-cv"><b>CV</b>ちそら</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ほかのページ</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <nav class="sub-nav" aria-label="ほかのページへの案内">
+      <a href="../index.html"><span class="m" aria-hidden="true">⌂</span>トップ</a>
+      <a href="story.html"><span class="m" aria-hidden="true">❖</span>物語</a>
+      <a href="character.html" class="cur" aria-current="page"><span class="m" aria-hidden="true">✦</span>キャラクター</a>
+      <a href="gallery.html"><span class="m" aria-hidden="true">◆</span>ギャラリー</a>
+      <a href="music.html"><span class="m" aria-hidden="true">♪</span>音楽</a>
+      <a href="product.html"><span class="m" aria-hidden="true">❖</span>製品情報</a>
+    </nav>
+  </div>
+</section>
+
+<footer>
+  <img class="footer-logo" src="logo_b.png" alt="『白夢フローライト』ロゴ" />
+  <p class="footer-title">白夢フローライト 公式サイト</p>
+  <nav class="footer-nav" aria-label="フッターメニュー">
+    <a href="../index.html">トップ</a>
+    <a href="story.html">物語</a>
+    <a href="character.html">キャラクター</a>
+    <a href="gallery.html">ギャラリー</a>
+    <a href="music.html">音楽</a>
+    <a href="product.html">製品情報</a>
+  </nav>
+  <p class="copyright">© 白夢フローライト制作チーム</p>
+  <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
+</footer>
+
+</div><!-- /.page -->
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var charaNames = {"sprite-haku":"ハク", "sprite-koyume":"友詩恋夢"};
+  document.querySelectorAll(".expr-chip").forEach(function(chip){
+    var pre = new Image();
+    pre.src = chip.getAttribute("data-src");
+  });
+  document.querySelectorAll(".expr-chip").forEach(function(chip){
+    chip.addEventListener("click", function(){
+      var img = document.getElementById(chip.getAttribute("data-target"));
+      if(!img) return;
+      var group = chip.closest(".expr-chips");
+      group.querySelectorAll(".expr-chip").forEach(function(c){ c.setAttribute("aria-pressed","false"); });
+      chip.setAttribute("aria-pressed","true");
+      var src = chip.getAttribute("data-src");
+      var label = chip.getAttribute("data-label");
+      var name = charaNames[img.id] || "";
+      function apply(){
+        img.src = src;
+        img.alt = name + "の立ち絵（" + label + "）";
+        img.classList.remove("fading");
+      }
+      if(reduceMotion){ apply(); return; }
+      img.classList.add("fading");
+      window.setTimeout(apply, 170);
+    });
+  });
+  var voiceBtns = Array.prototype.slice.call(document.querySelectorAll(".voice-btn"));
+  function stopBtn(btn){
+    btn.classList.remove("playing");
+    btn.setAttribute("aria-label", btn.getAttribute("aria-label").replace("一時停止","再生"));
+  }
+  voiceBtns.forEach(function(btn){
+    var audio = document.getElementById(btn.getAttribute("data-audio"));
+    if(!audio) return;
+    btn.addEventListener("click", function(){
+      if(!audio.paused){ audio.pause(); return; }
+      voiceBtns.forEach(function(other){
+        if(other !== btn){
+          var oa = document.getElementById(other.getAttribute("data-audio"));
+          if(oa && !oa.paused) oa.pause();
+        }
+      });
+      audio.currentTime = 0;
+      audio.play();
+    });
+    audio.addEventListener("play", function(){
+      btn.classList.add("playing");
+      btn.setAttribute("aria-label", btn.getAttribute("aria-label").replace("再生","一時停止"));
+    });
+    audio.addEventListener("pause", function(){ stopBtn(btn); });
+    audio.addEventListener("ended", function(){ stopBtn(btn); });
+  });
+})();
+</script>
+
+</body>
+</html>

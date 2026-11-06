@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="description" content="『白夢フローライト』のギャラリー。キービジュアル、ハクの能力発動イラスト、憶那村の背景画を拡大表示でご覧いただけます。" />
+<link rel="icon" href="data:," />
+<title>ギャラリー ― 『白夢フローライト』公式サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2340; --navy-deep:#141a30; --navy-soft:#2a3358;
+    --paper:#faf7ef; --paper-2:#f3eee0; --paper-3:#ece5d2;
+    --ink:#2e2a24; --ink-2:#4c463c; --muted:#7d7666;
+    --line:#c9bfa5; --line-dark:#8f8468;
+    --mint:#7fc8a9; --mint-deep:#3d7d63; --mint-pale:#dcefe4;
+    --red:#b8443c; --red-deep:#93332d; --gold:#a5854c;
+    --serif:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;color:var(--ink);font-family:var(--sans);line-height:1.8;letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;background-color:var(--navy);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.45'/%3E%3Cpath d='M104 92l4 7-4 7-4-7z' fill='%23faf7ef' fill-opacity='.22'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.5'/%3E%3Cpath d='M20 108l1.3 3.2 3.2 1.3-3.2 1.3L20 117l-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%237fc8a9' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='52' cy='122' r='1.1' fill='%23faf7ef' fill-opacity='.3'/%3E%3C/svg%3E"),
+      radial-gradient(circle, rgba(250,247,239,.30) 1px, transparent 1.4px),
+      radial-gradient(circle, rgba(127,200,169,.26) 1px, transparent 1.4px);
+    background-size:140px 140px, 90px 90px, 150px 150px;
+    background-position:0 0, 19px 27px, 44px 61px;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  ::selection{background:var(--mint);color:var(--navy-deep)}
+  .page{position:relative;max-width:1024px;margin:0 auto;background:var(--paper);border-left:3px double var(--line-dark);border-right:3px double var(--line-dark);box-shadow:0 0 0 1px rgba(0,0,0,.35), 0 0 60px rgba(0,0,0,.5)}
+  .page::before{content:"";position:absolute;inset:7px;border:1px solid var(--line);pointer-events:none;z-index:30}
+  .corner{position:absolute;z-index:31;color:var(--gold);font-size:15px;line-height:1;pointer-events:none;font-family:var(--serif)}
+  .corner.tl{top:11px;left:13px}.corner.tr{top:11px;right:13px}.corner.bl{bottom:11px;left:13px}.corner.br{bottom:11px;right:13px}
+  .wrap{max-width:944px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px double var(--mint)}
+  .nav-inner{max-width:1024px;margin:0 auto;display:flex;align-items:stretch;flex-wrap:wrap}
+  .nav-brand{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.06em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:9px;padding:10px 18px 10px 22px;white-space:nowrap}
+  .nav-brand .gem{color:var(--mint);font-size:13px}
+  .nav-links{display:flex;flex:1;flex-wrap:wrap}
+  .nav-links a{flex:1 1 auto;display:flex;align-items:center;justify-content:center;font-size:12.5px;letter-spacing:.1em;text-decoration:none;color:#e8eaf2;font-weight:700;padding:10px 6px;border-left:1px solid var(--navy-soft);white-space:nowrap;text-align:center}
+  .nav-links a:hover,.nav-links a:focus-visible{background:var(--paper-3);color:var(--navy-deep)}
+  .nav-links a.active{background:var(--mint);color:var(--navy-deep);box-shadow:inset 0 -3px 0 var(--red)}
+  .page-visual{position:relative;overflow:hidden;background:var(--navy);border-bottom:3px double var(--mint);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.5'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.55'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.5'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .page-visual-inner{max-width:944px;margin:0 auto;padding:30px 28px 26px;position:relative}
+  .page-visual h1{font-family:var(--serif);font-size:clamp(24px,4.4vw,34px);font-weight:800;letter-spacing:.06em;color:#fff;margin:0;line-height:1.45}
+  .page-visual h1 .dia{color:var(--mint);font-size:.62em;vertical-align:.28em;margin-right:10px}
+  .page-visual p{margin:6px 0 0;color:#c9cee2;font-size:13.5px;letter-spacing:.05em}
+  .page-visual .big-gem{position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:110px;line-height:1;color:rgba(127,200,169,.16);font-family:var(--serif);pointer-events:none}
+  .page-visual .moon{position:absolute;right:120px;top:8px;font-size:22px;color:var(--gold);opacity:.85;pointer-events:none}
+  section{padding:52px 0 4px}
+  section.first{padding-top:38px}
+  .sec-head{margin-bottom:28px}
+  .band{display:flex;align-items:center;gap:14px;border-bottom:3px double var(--line-dark);padding-bottom:8px}
+  .band::before{content:"";flex:none;width:10px;align-self:stretch;background:var(--mint);border:1px solid var(--mint-deep)}
+  .band h2{font-family:var(--serif);font-size:clamp(21px,3.4vw,27px);font-weight:800;letter-spacing:.05em;margin:0;line-height:1.4;color:var(--navy)}
+  .band .dia{margin-left:auto;color:var(--gold);font-size:13px;flex:none}
+  .lead{color:var(--ink-2);font-size:14.5px;margin:0 0 26px}
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .gal-item{grid-column:span 1;text-align:left;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--line-dark);padding:0;cursor:pointer;display:flex;flex-direction:column;width:100%}
+  .gal-item:focus-visible{outline:3px solid var(--mint-deep);outline-offset:2px}
+  .gal-item.wide{grid-column:span 2}
+  .gal-thumb{overflow:hidden;flex:none;border-bottom:1px solid var(--line)}
+  .gal-thumb img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .5s ease}
+  .gal-item.wide .gal-thumb img{aspect-ratio:16/8.2}
+  .gal-item.ability .gal-thumb{background:#241a26}
+  .gal-item.ability .gal-thumb img{object-position:center 6%}
+  .gal-item:hover .gal-thumb img{transform:scale(1.04)}
+  @media (prefers-reduced-motion: reduce){ .gal-thumb img{transition:none} .gal-item:hover .gal-thumb img{transform:none} }
+  .gal-cap{padding:12px 14px 14px}
+  .gal-cap h3{font-family:var(--serif);font-size:15.5px;margin:0 0 3px;color:var(--navy)}
+  .gal-cap h3::before{content:"◆ ";color:var(--mint-deep);font-size:10px;vertical-align:2px}
+  .gal-cap p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.7}
+  .gal-cap .zoom-hint{display:inline-block;font-size:10.5px;letter-spacing:.1em;color:var(--red);font-weight:700;margin-top:7px;border:1px solid var(--red);padding:1px 8px}
+  .gal-item:hover .zoom-hint{background:var(--red);color:#fff}
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(16,20,38,.94);display:none;align-items:center;justify-content:center;padding:24px}
+  .lightbox.open{display:flex}
+  .lightbox figure{margin:0;max-width:min(1080px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .lightbox img{max-width:100%;max-height:calc(100svh - 150px);width:auto;height:auto;object-fit:contain;border:3px double var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .lightbox figcaption{color:#e9ebf5;font-family:var(--serif);font-size:15px;letter-spacing:.06em;text-align:center}
+  .lb-btn{position:absolute;width:46px;height:46px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.06);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .lb-btn:hover{background:var(--mint);color:var(--navy-deep)}
+  .lb-close{top:18px;right:18px}
+  .lb-prev{left:14px;top:50%;transform:translateY(-50%)}
+  .lb-next{right:14px;top:50%;transform:translateY(-50%)}
+  .sub-nav{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:8px}
+  .sub-nav a{display:flex;flex-direction:column;align-items:center;gap:3px;border:1px solid var(--line-dark);background:var(--paper);text-decoration:none;padding:11px 6px 9px;font-family:var(--serif);font-weight:700;font-size:13.5px;color:var(--navy);letter-spacing:.05em;text-align:center}
+  .sub-nav a .m{font-size:15px;color:var(--mint-deep)}
+  .sub-nav a:hover,.sub-nav a:focus-visible{background:var(--navy);color:#fff}
+  .sub-nav a:hover .m{color:var(--mint)}
+  .sub-nav a.cur{background:var(--mint-pale);pointer-events:none}
+  footer{margin-top:64px;background:var(--navy);color:#e9ebf5;padding:48px 20px 42px;text-align:center;border-top:3px double var(--mint);position:relative;z-index:1;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.4'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.4'/%3E%3C/svg%3E");
+    background-size:140px 140px}
+  .footer-logo{width:min(360px,80vw);margin:0 auto;filter:brightness(0) invert(1);opacity:.97;aspect-ratio:1000/560;object-fit:cover;object-position:center 48%}
+  .footer-title{font-family:var(--serif);letter-spacing:.18em;font-size:12px;margin:22px 0 0;padding-left:.18em;color:#aeb6d4}
+  .footer-nav{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin:22px 0 0}
+  .footer-nav a{font-size:12px;letter-spacing:.12em;text-decoration:none;color:#c9cee2;padding:2px 14px}
+  .footer-nav a + a{border-left:1px solid var(--navy-soft)}
+  .footer-nav a:hover{color:var(--mint)}
+  .copyright{margin:28px 0 0;font-size:12.5px;color:#9aa0bd;letter-spacing:.05em}
+  .footer-note{margin:6px 0 0;font-size:11.5px;color:#767d99}
+  @media (max-width:860px){
+    section{padding:42px 0 4px}
+    .wrap{padding:0 18px}
+    .page-visual-inner{padding:24px 18px 20px}
+    .nav-brand{padding:8px 12px}
+    .nav-links a{font-size:11.5px;padding:9px 4px;flex:1 1 30%}
+    .gal-grid{grid-template-columns:1fr 1fr}
+    .gal-item.wide{grid-column:span 2}
+    .sub-nav{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (max-width:520px){
+    .gal-grid{grid-template-columns:1fr}
+    .gal-item.wide{grid-column:span 1}
+    .gal-item.wide .gal-thumb img{aspect-ratio:16/10}
+    .lb-prev{left:6px}.lb-next{right:6px}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <span class="corner tl" aria-hidden="true">✦</span>
+  <span class="corner tr" aria-hidden="true">✦</span>
+  <span class="corner bl" aria-hidden="true">✦</span>
+  <span class="corner br" aria-hidden="true">✦</span>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html"><span class="gem" aria-hidden="true">❖</span>白夢フローライト</a>
+    <nav class="nav-links" aria-label="サイトメニュー">
+      <a href="../index.html">トップ</a>
+      <a href="story.html">物語</a>
+      <a href="character.html">キャラクター</a>
+      <a href="gallery.html" class="active" aria-current="page">ギャラリー</a>
+      <a href="music.html">音楽</a>
+      <a href="product.html">製品情報</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-visual">
+  <div class="page-visual-inner">
+    <span class="big-gem" aria-hidden="true">◆</span>
+    <span class="moon" aria-hidden="true">☾</span>
+    <h1><span class="dia" aria-hidden="true">◆</span>ギャラリー</h1>
+    <p>キービジュアルと、ゲーム本編に登場する背景画</p>
+  </div>
+</div>
+
+<section class="first">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>イラストと背景画</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <p class="lead">キービジュアルと、ゲーム本編に登場する背景画をご紹介します。画像をクリックすると拡大表示できます。</p>
+    <div class="gal-grid">
+      <button type="button" class="gal-item wide" data-full="keyvisual.png" data-caption="キービジュアル ― 赤い月と屋上">
+        <span class="gal-thumb"><img src="keyvisual.png" alt="赤い月が昇る夜の屋上に立つハクと恋夢のタイトルイラスト" loading="lazy" /></span>
+        <span class="gal-cap">
+          <h3>キービジュアル</h3>
+          <p>赤い月の昇る屋上と、ハクと恋夢。本作のタイトル画面を飾るメインビジュアルです。</p>
+          <span class="zoom-hint">クリックで拡大</span>
+        </span>
+      </button>
+      <button type="button" class="gal-item ability" data-full="haku_ability_red.png" data-caption="ハク ― 能力発動">
+        <span class="gal-thumb"><img src="haku_ability_red.png" alt="赤く光る力を発動するハクのイラスト" loading="lazy" /></span>
+        <span class="gal-cap">
+          <h3>ハク ― 能力発動</h3>
+          <p>念力のような不思議な力を発動するハク。赤く染まるその姿は、物語の転機を告げます。</p>
+          <span class="zoom-hint">クリックで拡大</span>
+        </span>
+      </button>
+      <button type="button" class="gal-item" data-full="bg_shrine.jpg" data-caption="背景 ― 神社">
+        <span class="gal-thumb"><img src="bg_shrine.jpg" alt="木漏れ日の差す神社の参道と石灯籠" loading="lazy" /></span>
+        <span class="gal-cap">
+          <h3>神社</h3>
+          <p>木々に守られるように佇む、村の神社。朝の光が参道を静かに照らします。</p>
+          <span class="zoom-hint">クリックで拡大</span>
+        </span>
+      </button>
+      <button type="button" class="gal-item" data-full="bg_road.jpg" data-caption="背景 ― 村の道">
+        <span class="gal-thumb"><img src="bg_road.jpg" alt="田畑と山々に囲まれた村の道" loading="lazy" /></span>
+        <span class="gal-cap">
+          <h3>村の道</h3>
+          <p>黄金色の田畑と集落を見渡す一本道。愛翔の新しい日常は、ここから始まります。</p>
+          <span class="zoom-hint">クリックで拡大</span>
+        </span>
+      </button>
+      <button type="button" class="gal-item" data-full="bg_school.jpg" data-caption="背景 ― 村の建物">
+        <span class="gal-thumb"><img src="bg_school.jpg" alt="瓦屋根と木の壁が印象的な和風の建物" loading="lazy" /></span>
+        <span class="gal-cap">
+          <h3>村の建物</h3>
+          <p>瓦屋根と木の温もりが残る、村の暮らしの風景。懐かしさの漂う日常の舞台です。</p>
+          <span class="zoom-hint">クリックで拡大</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>ほかのページ</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <nav class="sub-nav" aria-label="ほかのページへの案内">
+      <a href="../index.html"><span class="m" aria-hidden="true">⌂</span>トップ</a>
+      <a href="story.html"><span class="m" aria-hidden="true">❖</span>物語</a>
+      <a href="character.html"><span class="m" aria-hidden="true">✦</span>キャラクター</a>
+      <a href="gallery.html" class="cur" aria-current="page"><span class="m" aria-hidden="true">◆</span>ギャラリー</a>
+      <a href="music.html"><span class="m" aria-hidden="true">♪</span>音楽</a>
+      <a href="product.html"><span class="m" aria-hidden="true">❖</span>製品情報</a>
+    </nav>
+  </div>
+</section>
+
+<footer>
+  <img class="footer-logo" src="logo_b.png" alt="『白夢フローライト』ロゴ" />
+  <p class="footer-title">白夢フローライト 公式サイト</p>
+  <nav class="footer-nav" aria-label="フッターメニュー">
+    <a href="../index.html">トップ</a>
+    <a href="story.html">物語</a>
+    <a href="character.html">キャラクター</a>
+    <a href="gallery.html">ギャラリー</a>
+    <a href="music.html">音楽</a>
+    <a href="product.html">製品情報</a>
+  </nav>
+  <p class="copyright">© 白夢フローライト制作チーム</p>
+  <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
+</footer>
+
+</div><!-- /.page -->
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="画像の拡大表示" hidden>
+  <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="閉じる">×</button>
+  <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="前の画像">‹</button>
+  <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="次の画像">›</button>
+  <figure>
+    <img id="lb-img" alt="" />
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var items = Array.prototype.slice.call(document.querySelectorAll(".gal-item"));
+  var lb = document.getElementById("lightbox");
+  var lbImg = document.getElementById("lb-img");
+  var lbCap = document.getElementById("lb-cap");
+  var current = 0;
+  var lastFocus = null;
+  function show(i){
+    current = (i + items.length) % items.length;
+    var item = items[current];
+    lbImg.src = item.getAttribute("data-full");
+    var thumb = item.querySelector("img");
+    lbImg.alt = thumb ? thumb.alt : "";
+    lbCap.textContent = item.getAttribute("data-caption") || "";
+  }
+  function openLb(i, trigger){
+    lastFocus = trigger;
+    show(i);
+    lb.hidden = false;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+    document.getElementById("lb-close").focus();
+  }
+  function closeLb(){
+    lb.classList.remove("open");
+    lb.hidden = true;
+    document.body.style.overflow = "";
+    if(lastFocus) lastFocus.focus();
+  }
+  items.forEach(function(item, i){
+    item.addEventListener("click", function(){ openLb(i, item); });
+  });
+  document.getElementById("lb-close").addEventListener("click", closeLb);
+  document.getElementById("lb-prev").addEventListener("click", function(){ show(current - 1); });
+  document.getElementById("lb-next").addEventListener("click", function(){ show(current + 1); });
+  lb.addEventListener("click", function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if(lb.hidden) return;
+    if(e.key === "Escape") closeLb();
+    if(e.key === "ArrowLeft") show(current - 1);
+    if(e.key === "ArrowRight") show(current + 1);
+  });
+})();
+</script>
+
+</body>
+</html>
