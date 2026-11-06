@@ -156,6 +156,27 @@
   .sub-nav a.cur{background:var(--mint-pale);pointer-events:none}
 </style>
 <style>
+  /* movie + latest info (X) */
+  .movie-box{border:1px solid var(--line-dark);outline:3px double var(--line);outline-offset:3px;background:var(--navy-deep);padding:10px}
+  .movie-frame{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+  .movie-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .movie-cap{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;justify-content:space-between;margin-top:14px}
+  .movie-cap .role{flex:none;font-size:11px;letter-spacing:.12em;font-weight:700;color:#fff;background:var(--red);padding:2px 10px}
+  .movie-cap h3{font-family:var(--serif);font-size:18px;margin:0;color:var(--navy);letter-spacing:.04em;line-height:1.5;flex:1;min-width:200px}
+  .movie-cap a{font-size:12.5px;font-weight:700;color:var(--red);white-space:nowrap}
+  .x-banner{position:relative;display:flex;align-items:center;gap:16px;border:1px solid var(--navy-deep);background:var(--navy);color:#fff;padding:20px 22px;text-decoration:none;overflow:hidden}
+  .x-banner::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--mint);border-right:1px solid var(--mint-deep)}
+  .x-banner .x-mark{flex:none;width:52px;height:52px;border:1px solid var(--mint);background:var(--navy-soft);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:#fff;font-family:var(--serif)}
+  .x-banner .x-text{flex:1;min-width:0}
+  .x-banner h3{font-family:var(--serif);font-size:19px;margin:0 0 2px;letter-spacing:.05em;line-height:1.45;color:#fff}
+  .x-banner p{margin:0;font-size:12.5px;color:#c9cee2;line-height:1.7}
+  .x-banner .x-go{flex:none;font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--navy-deep);background:var(--mint);border:1px solid var(--mint);padding:6px 12px;white-space:nowrap}
+  .x-banner:hover{background:var(--navy-deep)}
+  .x-banner:hover .x-go{background:var(--red);border-color:var(--red);color:#fff}
+  .x-embed{margin-top:14px;border:1px solid var(--line-dark);background:#fff;padding:10px;min-height:120px}
+  .x-embed .twitter-timeline{font-size:13px;color:var(--ink-2)}
+  .footer-x{display:inline-block;margin:18px auto 0;border:1px solid var(--mint);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.08em;padding:7px 18px}
+  .footer-x:hover{background:var(--mint);color:var(--navy-deep)}
   /* footer */
   footer{margin-top:64px;background:var(--navy);color:#e9ebf5;padding:48px 20px 42px;text-align:center;border-top:3px double var(--mint);position:relative;z-index:1;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M34 24l5 8-5 8-5-8z' fill='none' stroke='%237fc8a9' stroke-opacity='.4'/%3E%3Cpath d='M112 26l1.6 4 4 1.6-4 1.6L112 37l-1.6-3.8-4-1.6 4-1.6z' fill='%23faf7ef' fill-opacity='.45'/%3E%3Ccircle cx='70' cy='66' r='1.4' fill='%23faf7ef' fill-opacity='.4'/%3E%3C/svg%3E");
@@ -189,6 +210,9 @@
     .news-list li{flex-direction:column;gap:0}
     .count-banner{flex-wrap:wrap}
     .count-banner .cb-go{border-left:none;border-top:1px dotted var(--line-dark);flex:1;justify-content:center;padding:8px}
+    .x-banner{flex-wrap:wrap}
+    .x-banner .x-go{flex:1;text-align:center}
+    .movie-cap h3{font-size:16px}
   }
   @media (max-width:520px){
     .hero-sprite.left{left:-4%}
@@ -265,6 +289,10 @@
       <p class="news-head"><span class="dia" aria-hidden="true">◆</span>お知らせ・更新履歴</p>
       <ul class="news-list">
         <li>
+          <span class="news-date">2026.11.07</span>
+          <p>オープニングテーマ「春日灯籠」ほか主題歌動画を公開しました。最新情報はX（@WaterSound_Suzu）でもお知らせしています。</p>
+        </li>
+        <li>
           <span class="news-date">2027.01</span>
           <p>BOOTHにて無料配信予定です。続報をお待ちください。</p>
         </li>
@@ -280,6 +308,52 @@
     </div>
   </div>
 </div>
+
+<!-- ============ 動画 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>動画</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <p class="lead">オープニングテーマ「春日灯籠 Re:prised【初音ミク】」の動画です。エンディングテーマを含む全3曲は<a href="assets/music.html" style="color:var(--red);font-weight:700">音楽のページ</a>でご覧いただけます。</p>
+    <div class="movie-box">
+      <div class="movie-frame">
+        <iframe src="https://www.youtube.com/embed/SbpLLQs8xuY" title="オープニングテーマ「春日灯籠 Re:prised【初音ミク】」" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="movie-cap">
+      <span class="role">オープニングテーマ</span>
+      <h3>春日灯籠 Re:prised【初音ミク】</h3>
+      <a href="https://www.youtube.com/watch?v=SbpLLQs8xuY" target="_blank" rel="noopener">YouTubeで見る ▸</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 最新情報（X） ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>最新情報はこちら</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <a class="x-banner" href="https://x.com/WaterSound_Suzu" target="_blank" rel="noopener">
+      <span class="x-mark" aria-hidden="true">𝕏</span>
+      <span class="x-text">
+        <h3>最新情報は X でお知らせしています</h3>
+        <p>制作の進捗やお知らせは、Xアカウント @WaterSound_Suzu にて発信しています。</p>
+      </span>
+      <span class="x-go">Xを開く ▸</span>
+    </a>
+    <div class="x-embed">
+      <a class="twitter-timeline" data-lang="ja" data-height="480" data-dnt="true" href="https://twitter.com/WaterSound_Suzu?ref_src=twsrc%5Etfw">@WaterSound_Suzu の投稿を読み込んでいます… 表示されない場合は上のバナーからXを開いてください</a>
+    </div>
+  </div>
+</section>
 
 <!-- ============ 各ページへのご案内 ============ -->
 <section>
@@ -350,10 +424,12 @@
     <a href="assets/music.html">音楽</a>
     <a href="assets/product.html">製品情報</a>
   </nav>
+  <a class="footer-x" href="https://x.com/WaterSound_Suzu" target="_blank" rel="noopener">𝕏 最新情報はこちら ― @WaterSound_Suzu</a>
   <p class="copyright">© 白夢フローライト制作チーム</p>
   <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
 </footer>
 
 </div><!-- /.page -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

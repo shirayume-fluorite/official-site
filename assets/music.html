@@ -73,6 +73,16 @@
   .music-card:nth-child(3) .m-tag{background:var(--red)}
   .music-card h3{font-family:var(--serif);font-size:17px;margin:0 0 8px;color:var(--navy)}
   .music-card p{margin:0;font-size:13.5px;color:var(--ink-2)}
+  .video-list{display:grid;grid-template-columns:1fr;gap:26px;margin-top:6px}
+  .video-item{border:1px solid var(--line-dark);background:var(--paper);padding:18px}
+  .video-item .v-tag{display:inline-block;font-size:11px;letter-spacing:.12em;font-weight:700;color:#fff;background:var(--navy);padding:2px 10px;margin:0 0 8px}
+  .video-item.op .v-tag{background:var(--red)}
+  .video-item.ed .v-tag{background:var(--mint-deep)}
+  .video-item h3{font-family:var(--serif);font-size:19px;margin:0 0 12px;color:var(--navy);letter-spacing:.04em;line-height:1.5}
+  .video-frame{position:relative;aspect-ratio:16/9;background:#000;border:1px solid var(--line-dark);overflow:hidden}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .video-item .v-link{margin:10px 0 0;font-size:12.5px}
+  .video-item .v-link a{font-weight:700;color:var(--red)}
   .music-note{margin:16px 0 0;border:1px dashed var(--line-dark);background:var(--paper-2);padding:16px 20px;font-size:13.5px;color:var(--ink-2)}
   .music-note strong{font-family:var(--serif);color:var(--navy)}
   .sub-nav{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:8px}
@@ -90,6 +100,8 @@
   .footer-nav a{font-size:12px;letter-spacing:.12em;text-decoration:none;color:#c9cee2;padding:2px 14px}
   .footer-nav a + a{border-left:1px solid var(--navy-soft)}
   .footer-nav a:hover{color:var(--mint)}
+  .footer-x{display:inline-block;margin:18px auto 0;border:1px solid var(--mint);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.08em;padding:7px 18px}
+  .footer-x:hover{background:var(--mint);color:var(--navy-deep)}
   .copyright{margin:28px 0 0;font-size:12.5px;color:#9aa0bd;letter-spacing:.05em}
   .footer-note{margin:6px 0 0;font-size:11.5px;color:#767d99}
   @media (max-width:860px){
@@ -146,13 +158,13 @@
     <div class="music-grid">
       <article class="music-card">
         <p class="m-tag">オープニング</p>
-        <h3>OP楽曲（ボーカル曲）</h3>
-        <p>物語の幕開けを告げる、歌入りのオープニング楽曲。そのメロディは、作品全体を貫くモチーフとして息づいています。</p>
+        <h3>春日灯籠 Re:prised</h3>
+        <p>物語の幕開けを告げる、歌入りのオープニングテーマ。初音ミク歌唱。下の動画でお聞きいただけます。</p>
       </article>
       <article class="music-card">
         <p class="m-tag">エンディング</p>
-        <h3>ED楽曲（ボーカル曲）</h3>
-        <p>物語の余韻を静かに包み込む、歌入りのエンディング楽曲。憶那村での日々を振り返る、締めくくりの一曲です。</p>
+        <h3>hug ／ 夢浮橋 Re:prised</h3>
+        <p>物語の余韻を静かに包み込む、歌入りのエンディングテーマ。初音ミク歌唱。下の動画でお聞きいただけます。</p>
       </article>
       <article class="music-card">
         <p class="m-tag">劇中音楽</p>
@@ -161,6 +173,44 @@
       </article>
     </div>
     <p class="music-note"><strong>音楽と物語</strong> ― ヒロインのひとり、友詩恋夢はギターを抱えた少女です。彼女の弾く音色は、村と愛翔をつなぐ架け橋として、物語の中でも大切な役割を担います。キャラクターの紹介は<a href="character.html" style="color:var(--red);font-weight:700">キャラクターのページ</a>でご覧いただけます。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band">
+        <h2>主題歌動画</h2>
+        <span class="dia" aria-hidden="true">◆</span>
+      </div>
+    </div>
+    <p class="lead">オープニングテーマとエンディングテーマの動画です。いずれも初音ミク歌唱の「Re:prised」版で公開されています。</p>
+    <div class="video-list">
+      <article class="video-item op">
+        <p class="v-tag">オープニングテーマ</p>
+        <h3>春日灯籠 Re:prised【初音ミク】</h3>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/SbpLLQs8xuY" title="オープニングテーマ「春日灯籠 Re:prised【初音ミク】」" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="v-link"><a href="https://www.youtube.com/watch?v=SbpLLQs8xuY" target="_blank" rel="noopener">YouTubeで見る ▸</a></p>
+      </article>
+      <article class="video-item ed">
+        <p class="v-tag">エンディングテーマ</p>
+        <h3>hug Re:prised 【初音ミク】</h3>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/pcd27TJG_vo" title="エンディングテーマ「hug Re:prised 【初音ミク】」" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="v-link"><a href="https://www.youtube.com/watch?v=pcd27TJG_vo" target="_blank" rel="noopener">YouTubeで見る ▸</a></p>
+      </article>
+      <article class="video-item ed">
+        <p class="v-tag">エンディングテーマ</p>
+        <h3>夢浮橋 Re:prised【初音ミク】</h3>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/_zhWR3my28g" title="エンディングテーマ「夢浮橋 Re:prised【初音ミク】」" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="v-link"><a href="https://www.youtube.com/watch?v=_zhWR3my28g" target="_blank" rel="noopener">YouTubeで見る ▸</a></p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -194,6 +244,7 @@
     <a href="music.html">音楽</a>
     <a href="product.html">製品情報</a>
   </nav>
+  <a class="footer-x" href="https://x.com/WaterSound_Suzu" target="_blank" rel="noopener">𝕏 最新情報はこちら ― @WaterSound_Suzu</a>
   <p class="copyright">© 白夢フローライト制作チーム</p>
   <p class="footer-note">本サイトに掲載の画像・文章の無断転載を禁じます。</p>
 </footer>
