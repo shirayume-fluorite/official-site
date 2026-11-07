@@ -51,6 +51,7 @@
   .hero-art{position:relative;border:1px solid var(--line-dark);outline:3px double var(--line);outline-offset:4px;background:var(--navy-deep);aspect-ratio:16/10.2;overflow:hidden}
   .hero-art .kv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}
   .hero-art::after{content:"";position:absolute;inset:6px;border:1px solid rgba(250,247,239,.4);pointer-events:none;z-index:6}
+  .hero-art::before{content:"";position:absolute;left:0;bottom:0;width:64%;height:48%;background:linear-gradient(18deg, rgba(10,12,26,.55) 0%, rgba(10,12,26,.26) 55%, rgba(10,12,26,0) 100%);z-index:3;pointer-events:none}
   .hero-sprite{position:absolute;bottom:0;height:68%;width:auto;z-index:2;filter:drop-shadow(0 0 7px rgba(10,12,26,.5));pointer-events:none}
   .hero-sprite.left{left:1%}
   .hero-sprite.right{right:1%}
@@ -67,7 +68,7 @@
   .mv-logo img{width:100%;height:auto;display:block}
   .mv-ruby{margin:3px 0 1px;text-align:center;font-size:10.5px;letter-spacing:.42em;padding-left:.42em;color:var(--muted);font-weight:500}
   .mv-date{position:absolute;left:20px;bottom:16px;z-index:5;color:#fff;pointer-events:none}
-  .mv-date .d1{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(27px,4.6vw,42px);letter-spacing:.05em;line-height:1.25;text-shadow:2px 2px 0 var(--navy-deep),0 0 16px rgba(10,12,26,.6)}
+  .mv-date .d1{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(27px,4.6vw,42px);letter-spacing:.05em;line-height:1.25;text-shadow:2px 2px 0 var(--navy-deep),0 2px 12px rgba(10,12,26,.85),0 0 16px rgba(10,12,26,.6)}
   .mv-date .d1 .yr{font-size:.52em;letter-spacing:.1em}
   .mv-date .d2{display:inline-block;margin-top:2px;font-size:12.5px;font-weight:700;letter-spacing:.16em;background:var(--red);padding:2px 12px 3px;box-shadow:2px 2px 0 var(--navy-deep)}
   .mv-movie{position:absolute;left:50%;transform:translateX(-50%);bottom:16px;z-index:5;width:min(284px,34%);background:var(--navy-deep);border:1px solid rgba(250,247,239,.55);padding:6px;box-shadow:0 8px 20px rgba(8,10,22,.45)}
@@ -93,6 +94,8 @@
   .bnr-title .dia{color:var(--mint);font-size:.6em;vertical-align:.3em;margin-right:8px}
   .bnr-sub{display:block;font-size:12px;color:#dfe5f2;letter-spacing:.04em;margin-top:1px;text-shadow:0 1px 4px rgba(10,12,26,.8)}
   .bnr-chara{position:absolute;right:6px;bottom:0;height:172px;width:auto;z-index:1;filter:drop-shadow(0 0 6px rgba(10,12,26,.45))}
+  .bnr-bg.pos-top{object-position:center 16%}
+  .bnr-ability{position:absolute;right:30px;top:0;height:660px;width:auto;z-index:1;filter:drop-shadow(0 0 10px rgba(184,68,60,.4))}
   .bnr-x{background:var(--navy)}
   .bnr-x .bnr-mark{position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:64px;line-height:1;color:var(--mint);font-family:var(--serif);z-index:1}
   .bnr:hover .bnr-bg,.bnr:focus-visible .bnr-bg{filter:brightness(1.1)}
@@ -232,8 +235,9 @@
       </span>
     </a>
     <a class="bnr" href="assets/gallery.html">
-      <img class="bnr-bg" src="assets/haku_ability_red.png" alt="" aria-hidden="true" />
+      <img class="bnr-bg pos-top" src="assets/keyvisual.png" alt="" aria-hidden="true" />
       <span class="bnr-shade" aria-hidden="true"></span>
+      <img class="bnr-ability" src="assets/haku_ability_red.png" alt="" aria-hidden="true" />
       <span class="bnr-body">
         <span class="bnr-title"><span class="dia" aria-hidden="true">◆</span>ギャラリー</span>
         <span class="bnr-sub">キービジュアル、能力発動イラスト、村の背景画</span>
